@@ -131,7 +131,7 @@ width: 100%;
     font-size: 14px;
 }
 
-@media (max-width:620px) {
+/* @media (max-width:620px)  {
     .card{
         width: 95%;
         min-width: 350px;
@@ -183,5 +183,53 @@ width: 100%;
         width: 300px;
     }
 
-}
+}  */
 
+@media (min-width: 375px) 
+  and (max-width: 812px)  {
+        .card{
+            width: 95%;
+            min-width: 350px;
+            height: 95%;
+            flex-direction: column;
+            max-width: 330px;
+        }
+    
+        .card > .left-card > .mobile{
+            display: block;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 8px 8px 0 0;
+          }
+    
+          .card > .left-card > .desktop{
+            display: none;
+          }
+    
+    
+        .title{
+            letter-spacing: 5px;
+            margin-bottom: 0.3rem;
+        }
+        
+        .main-title{
+            margin-bottom: 0.5rem;
+            line-height: 2.2rem;
+            font-size: 36px;
+            width: 300px;
+        }
+        
+        .price{
+            margin-top: 1rem;
+        }
+    
+        .price del{
+            margin-right: 6.5rem;
+        }
+    
+        .cart{
+            margin-top: 1.3rem;
+            padding: 0.7rem;
+            width: 300px;
+        }
+     }
