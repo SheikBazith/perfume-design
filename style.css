@@ -186,10 +186,6 @@ width: 100%;
 
 @media only screen and (min-width: 375px) 
   and (max-width: 812px)  {
-
-        .container {
-            height: 0;
-        }
         .card{
             width: 90%;
             min-width: 350px;
