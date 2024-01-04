@@ -38,14 +38,17 @@ width: 100%;
     align-items: flex-start;
     
 }
-.card > .left-card > img{
+.card > .left-card > .desktop{
     width: 300px;
     display: block;
     border-top-left-radius:2%;
     border-bottom-left-radius: 2%; 
-    
-
 }
+
+.card > .left-card > .mobile{
+  display: none;
+}
+
 
 .card > .right-card{
     padding-left: 2rem;
@@ -87,14 +90,13 @@ width: 100%;
 .main-price{
     color: var(--cyan);
     font-family: "Fraunces";
-    padding-right: 0;
 }
 
 .price del{
     color: var(--d-grey);
     font-family: 'Montserrat';
-    margin-right: 1rem
-    ;
+    margin-right: 2rem;
+    font-size: 14px;
 
 }
 
@@ -105,6 +107,7 @@ width: 100%;
 .cart{
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 0.5rem;
     flex-direction: row-reverse;
     background-color: var(--cyan);
@@ -113,7 +116,7 @@ width: 100%;
     width: 210px;
     border: none;
     border-radius: 10px;
-    margin-left: 0.5rem;
+    width: 220px;
     margin-top: 2rem;
     font-family: 'Montserrat';
     font-weight: bold;
@@ -126,5 +129,59 @@ width: 100%;
 
 .cart > p {
     font-size: 14px;
+}
+
+@media (max-width:620px) {
+    .card{
+        width: 95%;
+        min-width: 350px;
+        height: 95%;
+        flex-direction: column;
+        max-width: 330px;
+    }
+
+    .card > .left-card > .mobile{
+        display: block;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 15px 15px 0 0;
+      }
+
+      .card > .left-card > .desktop{
+        display: none;
+      }
+
+      .card > .right-card{
+        padding-top: 1rem;
+        line-height: 1rem;
+
+    }
+
+    .title{
+        letter-spacing: 5px;
+        margin-bottom: 0.3rem;
+    }
+    
+    .main-title{
+        margin-bottom: 0.5rem;
+        line-height: 2rem;
+        font-size: 36px;
+        width: 300px;
+    }
+    
+    .price{
+        margin-top: 1rem;
+    }
+
+    .price del{
+        margin-right: 6.5rem;
+    }
+
+    .cart{
+        margin-top: 1rem;
+        padding: 0.7rem;
+        width: 300px;
+    }
+
 }
 
