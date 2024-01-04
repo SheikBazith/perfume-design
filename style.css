@@ -185,12 +185,12 @@ width: 100%;
 
 }  */
 
-@media (min-width: 375px) 
+@media only screen and (min-width: 375px) 
   and (max-width: 812px)  {
         .card{
-            width: 95%;
+            width: 90%;
             min-width: 350px;
-            height: 95%;
+            height: 99%;
             flex-direction: column;
             max-width: 330px;
         }
@@ -198,7 +198,6 @@ width: 100%;
         .card > .left-card > .mobile{
             display: block;
             width: 100%;
-            object-fit: cover;
             border-radius: 8px 8px 0 0;
           }
     
@@ -209,11 +208,11 @@ width: 100%;
     
         .title{
             letter-spacing: 5px;
-            margin-bottom: 0.3rem;
+            margin-bottom: 0.2rem;
         }
         
         .main-title{
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.3rem;
             line-height: 2.2rem;
             font-size: 36px;
             width: 300px;
