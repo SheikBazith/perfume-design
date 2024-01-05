@@ -188,6 +188,7 @@ width: 100%;
   and (max-width: 812px)  {
 
         .container{
+            align-items: flex-start;
             margin-top:2rem;
         }
 
